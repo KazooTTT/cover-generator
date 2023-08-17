@@ -1,25 +1,15 @@
-# Next.js & NextUI Template
+# Cover Generator
 
-This is a template for creating applications using Next.js 13 (pages directory) and NextUI (v2).
+## design
 
-## Technologies Used
+### base info
 
-- [Next.js 13](https://nextjs.org/docs/getting-started)
-- [NextUI](https://nextui.org)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Framer Motion](https://www.framer.com/motion)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+1. platform ==> width and height
+2. theme
+3. font size
+4. font family
+5. bg img
+6. icon
+7. text
 
-## How to Use
-
-To create a new project based on this template using `create-next-app`, run the following command:
-
-```bash
-npx create-next-app -e https://github.com/nextui-org/next-pages-template
-```
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/next-pages-template/blob/main/LICENSE).
+## todo
