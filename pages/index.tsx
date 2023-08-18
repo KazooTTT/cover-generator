@@ -46,6 +46,13 @@ export default function IndexPage() {
             <GithubIcon size={20} />
             GitHub
           </Link>
+          <Link
+            as={NextLink}
+            className={buttonStyles({ variant: "bordered", radius: "full" })}
+            href={"/design"}
+          >
+            Design
+          </Link>
         </div>
 
         <div className="mt-8">
