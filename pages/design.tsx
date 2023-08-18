@@ -5,7 +5,6 @@ import { useState } from "react";
 import DesignContext from "@/components/design/context";
 import { PlatformType } from "@/components/design/metaConfig/platform";
 import { useMemo } from "react";
-import ThemeSelect from "@/components/design/ThemeRadioGroup";
 
 export default function IndexPage() {
   const [platform, setPlatform] = useState<PlatformType>("bilibili");
@@ -21,7 +20,7 @@ export default function IndexPage() {
     <DefaultLayout>
       <DesignContext.Provider value={providerValue}>
         <div className="setting">
-          <PlatformSelect /> <ThemeSelect />
+          <PlatformSelect />
         </div>
         <div className="content"></div>
       </DesignContext.Provider>
