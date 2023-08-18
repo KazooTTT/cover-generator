@@ -1,26 +1,27 @@
 import DefaultLayout from "@/layouts/default";
 
-import PlatformRadioGroup from "@/components/design/platformRadioGroup";
+import PlatformSelect from "@/components/design/platformRadioGroup";
 import { useState } from "react";
 import DesignContext from "@/components/design/context";
 import { PlatformType } from "@/components/design/metaConfig/platform";
+import { useMemo } from "react";
+import ThemeSelect from "@/components/design/ThemeRadioGroup";
 
 export default function IndexPage() {
   const [platform, setPlatform] = useState<PlatformType>("bilibili");
 
+  const providerValue = useMemo(() => {
+    return {
+      platform: platform,
+      togglePlatform: (newPlatform: PlatformType) => setPlatform(newPlatform),
+    };
+  }, [platform]);
+
   return (
     <DefaultLayout>
-      <DesignContext.Provider
-        value={{
-          platform: platform,
-          togglePlatform: (newPlatform: PlatformType) =>
-            setPlatform(newPlatform),
-        }}
-      >
+      <DesignContext.Provider value={providerValue}>
         <div className="setting">
-          <div className="platform">
-            <PlatformRadioGroup />
-          </div>
+          <PlatformSelect /> <ThemeSelect />
         </div>
         <div className="content"></div>
       </DesignContext.Provider>
