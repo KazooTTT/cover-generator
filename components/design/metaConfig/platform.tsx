@@ -1,11 +1,16 @@
+import Bilibili from "@/components/ui/logo/Bilibili";
+import Notion from "@/components/ui/logo/Notion";
+
 const platformOptions = [
   {
     value: "bilibili",
     label: "bilibili",
+    icon: <Bilibili />,
   },
   {
     value: "notion",
     label: "notion",
+    icon: <Notion />,
   },
 ];
 
