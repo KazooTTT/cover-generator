@@ -9,7 +9,7 @@ import { useMemo } from "react";
 export default function IndexPage() {
   const [platform, setPlatform] = useState<PlatformType>("bilibili");
 
-  const providerValue = useMemo(() => {
+  const providerValue = useMemo<DesignContextProps>(() => {
     return {
       platform: platform,
       togglePlatform: (newPlatform: PlatformType) => setPlatform(newPlatform),
