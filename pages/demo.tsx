@@ -20,7 +20,7 @@ export default function IndexPage() {
     <DefaultLayout>
       <DesignContext.Provider value={providerValue}>
         <div className="flex justify-center">
-          <div className="h-[716px] w-[1146px] bg-black border border-solid border-gray-500 relative bg-cover bg-center">
+          <div className="h-[716px] w-[1146px] bg-black relative bg-cover bg-center">
             <div className="absolute inset-0 blur-sm opacity-25 ">
               <Image
                 src={`/cover.jpg`}
