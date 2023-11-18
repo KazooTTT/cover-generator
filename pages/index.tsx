@@ -7,7 +7,7 @@ import DefaultLayout from "@/layouts/default";
 export default function IndexPage() {
   const config = [
     { title: "弹幕信任度", path: "/barrageTrust" },
-    { title: "嘴动变音", path: "/changesVoice" },
+    { title: "嘴动变音", path: "/changeVoice" },
   ];
 
   return (
