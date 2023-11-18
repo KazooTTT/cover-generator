@@ -5,6 +5,7 @@ import DesignContext from "@/components/design/context";
 import { PlatformType } from "@/components/design/metaConfig/platform";
 import { useMemo } from "react";
 import Image from "next/image";
+import { title } from "@/components/primitives";
 
 export default function IndexPage() {
   const [platform, setPlatform] = useState<PlatformType>("bilibili");
@@ -19,6 +20,9 @@ export default function IndexPage() {
   return (
     <DefaultLayout>
       <DesignContext.Provider value={providerValue}>
+        <div className="w-full text-center mb-2">
+          <h1 className={title({ color: "violet" })}>嘴动变音</h1>
+        </div>
         <div className="flex justify-center">
           <div className="h-[716px] w-[1146px] bg-black relative bg-cover bg-center">
             <div className="absolute inset-0 blur-sm opacity-25 ">

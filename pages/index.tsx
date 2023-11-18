@@ -5,21 +5,26 @@ import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 
 export default function IndexPage() {
+  const config = [
+    { title: "弹幕信任度", path: "/barrageTrust" },
+    { title: "嘴动变音", path: "/changesVoice" },
+  ];
+
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <h1 className={title({ color: "green" })}>目录</h1>
         <ul className="space-y-1 flex flex-col justify-center items-center">
-          {["弹幕信任度", "嘴动变音"].map((item) => (
-            <li key={item}>
+          {config.map((item) => (
+            <li key={item.path}>
               <Link
                 as={NextLink}
                 className={buttonStyles({
                   variant: "bordered",
                 })}
-                href={`/${item}`}
+                href={`/cover${item.path}`}
               >
-                {item}
+                {item.title}
               </Link>
             </li>
           ))}
