@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Alimama_DongFangDaKai_Regular';
+    src: url('/fonts/Alimama_DongFangDaKai_Regular.woff2') format('woff2');
+}
+
+.font-Alimama_DongFangDaKai_Regular {
+    font-family: 'Alimama_DongFangDaKai_Regular';
+}
+
+
+@font-face {
+    font-family: 'AlimamaFangYuanTiVF';
+    src: url('/fonts/AlimamaFangYuanTiVF-Thin.woff2') format('woff2');
+}
+
+.font-AlimamaFangYuanTiVF {
+    font-family: 'AlimamaFangYuanTiVF';
+}
+
+
+@font-face {
+    font-family: 'ZCOOLKuaiLe';
+    src: url('/fonts/ZCOOLKuaiLe-Regular.ttf') format('truetype');
+}
+
+.font-ZCOOLKuaiLe {
+    font-family: 'ZCOOLKuaiLe';
+}
+
+/* styles/tailwind.css */
+.text-gradient-shadow {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.5), 5px -6px 0 rgba(0, 0, 0, 0.5)
+}

@@ -12,6 +12,10 @@ export const siteConfig = {
       label: "Design",
       href: "/design",
     },
+    {
+      label: "Demo",
+      href: "/demo",
+    },
   ],
   navMenuItems: [
     {
