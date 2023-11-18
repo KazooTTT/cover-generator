@@ -75,14 +75,14 @@ export default function IndexPage() {
                 </span>
               </button>
             </div>
-            {/* <div className="absolute right-12 bottom-6">
+            <div className="absolute right-12 bottom-6">
               <Image
                 src={`/哈哈哈.png`}
                 height={512}
                 width={512}
                 alt="cover"
               ></Image>
-            </div> */}
+            </div>
           </div>
         </div>
       </DesignContext.Provider>
